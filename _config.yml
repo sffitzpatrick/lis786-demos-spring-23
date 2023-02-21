@@ -1,12 +1,12 @@
 title: Directory of Simple Machines
 theme: minima
 collections:
-  collection:
+  machines:
     output: true
 
 
 defaults:
   - scope:
-      type: "collection"
+      type: "machines"
     values:
-      layout: collection_item
+      layout: machine

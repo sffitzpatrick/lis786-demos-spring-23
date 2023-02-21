@@ -5,14 +5,13 @@ layout: home
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Six_Mechanical_Powers.png" alt="image of simple machines from wikipedia"/></p>
 <p><em>From Wikipedia:</em> A simple machine is a mechanical device that changes the direction or magnitude of a force. In general, 
     they can be defined as the simplest mechanisms that use mechanical advantage (also called leverage) to 
-    multiply force. Usually the term refers to the six classical simple machines that were defined by 
-    Renaissance scientists:</p>
+    multiply force.</p>
 
-    <ul>
-        <li>Lever</li>
-        <li>Wheel and axle</li>
-        <li>Pully</li>
-        <li>Incline Plane</li>
-        <li>Wedge</li>
-        <li>Screw</li>
-    </ul>
+<h2>List of Machines</h2>
+{% for machine in site.machines %}
+    <!-- DO SOMETHING -->
+    <h3>{{ machine.title }}</h3>
+    <p><img src="{{ machine.image }}" alt="alt text here..." /></p>
+    <p>{{ machine.content }}</p>
+    <p>Category: {{ machine.category }}</p>
+{% endfor %}
